@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Palenight - BusqueDev</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
+
+    <link rel="stylesheet" href="./css/app.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
+    <meta content="#1C1A3B" name="theme-color" />
+    <!-- Android search bar color -->
+    <meta content="{{$portfolio->name}} - Portfólio" property="og:title" />
+    <meta content="{{$portfolio->name}} - Portfólio" name="twitter:title" />
+    <meta content="{{env('APP_NAME')}}" property="og:site_name" />
+    <meta content="{{$portfolio->name}} - Portfólio" itemprop="name" />
+    <meta content="{{$portfolio->about}}" property="og:description" />
+    <meta content="{{$portfolio->about}}" name="twitter:description" />
+    <meta content="{{$portfolio->about}}" itemprop="description" />
+    <meta content="{{$portfolio->about}}" name="description" />
+    <meta
+      name="keywords"
+      content="he4rt, heartdevs, he4rtdevs, portfolio, portfólio, {{$portfolio->name}}"
+    />
+    <meta name="language" content="pt-br" />
+    <meta content="" />
+    <meta content="website" property="og:type" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta name="twitter:site" content="@busquedev" />
+    <meta content="@danielhe4rt" name="twitter:creator" />
+    <!-- Criador do template -->
+  </head>
+
+  <body>
+    <div id="root" class="container">
+      <nav class="navbar navbar-expand-md navbar-dark mb-3">
+        <a class="navbar-brand" href="{{route('landing')}}">BusqueDev</a>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
+                <i class="fa fa-home"></i> Portfólio
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
+                <i class="fa fa-file"></i> Resumo</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="row">
+        <div class="col-xs-12 col-md-3">
+          <div class="sticky-top pt-5 sidebar">
+            <div class="avatar">
+              <img
+                id="avatar"
+                src="https://placedog.net/300/300"
+                alt="Foto de Daniel Reis"
+              />
+            </div>
+            <h2 id="name" class="text-center">Nome do cidadão</h2>
+            <p class="text-center" id="title">Cargo do cidadão</p>
+            <div class="social-networks" id="socialNetworks"></div>
+          </div>
+        </div>
+        <div
+          class="col-xs-12 col-md-9"
+          style="border-left: 1px solid rgba(194, 194, 194, 0.1);"
+        >
+          <section id="intro">
+            <h3 class="text-center title">Sobre mim</h3>
+            <p id="about" class="text-center"></p>
+          </section>
+
+          <section id="skills">
+            <h3 class="text-center title">Habilidades</h3>
+            <p class="text-center">
+              Abaixo estão as ferramentas que já trabalhei ao decorrer da minha
+              carreira, informando o tempo de uso das mesmas:
+            </p>
+            <div class="row d-flex justify-content-center" id="skills"></div>
+          </section>
+
+          <section id="whereiwork">
+            <h3 class="text-center title">Experiências</h3>
+            <div class="row" id="jobs"></div>
+          </section>
+          <section id="contact">
+            <h3 class="text-center title" id="contato">Contato</h3>
+            <form
+              id="formContact"
+              class="form-contact"
+              method="POST"
+              action="/portfolio/{{$portfolio->id}}/messages"
+            >
+              @csrf
+
+              <div class="row">
+                <div class="col-6">
+                  <div class="form-group">
+                    <label for="inputName">Nome</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputName"
+                      name="name"
+                      placeholder="Seu nome"
+                    />
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-group">
+                    <label for="inputEmail">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="inputEmail"
+                      name="from"
+                      placeholder="seu@email.com"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputSubject">Assunto</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputSubject"
+                  name="subject"
+                  placeholder="Quero cotar um freelance | Só queria dar um oi"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="inputMessage">Mensagem</label>
+                <textarea
+                  class="form-control"
+                  id="inputMessage"
+                  name="content"
+                  rows="3"
+                ></textarea>
+              </div>
+              <button
+                class="float-right"
+                style="border-radius: 0.25rem;"
+                id="submitForm"
+                type="submit"
+              >
+                Enviar
+              </button>
+            </form>
+          </section>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <p class="text-center mb-0 p-3">
+        Template criado por
+        <a href="https://twitter.com/DanielHe4rt">DanielHe4rt</a>. ©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        <a href="https://busque.dev/">BusqueDev</a>
+      </p>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

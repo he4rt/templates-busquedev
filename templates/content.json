@@ -1,0 +1,78 @@
+{
+  "name": "Daniel Reis",
+  "title": "Back-end Developer",
+  "avatar": "https://placedog.net/300/300",
+  "about": "Just a back-end developer who likes to watch streams and play league on free time.",
+  "socials": [
+    {
+      "type": "github",
+      "link": "https://github.com/johndoe",
+      "faIcon": "fa-github"
+    },
+    {
+      "type": "twitter",
+      "link": "https://twitter.com/johndoe",
+      "faIcon": "fa-twitter"
+    },
+    {
+      "type": "linkedin",
+      "link": "https://linkedin.com/in/johndoe",
+      "faIcon": "fa-linkedin"
+    }
+  ],
+  "jobs": [
+    {
+      "company": "Google",
+      "worked_time": "1 year 8 months",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries."
+    },
+    {
+      "company": "Microsoft",
+      "worked_time": "1 year 8 months",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries."
+    }
+  ],
+  "skills": [
+    {
+      "name": "C",
+      "time": "1 month ~ 6 months",
+      "type": "language",
+      "comment": ""
+    },
+    {
+      "name": "PHP",
+      "time": "6 months ~ 1 year",
+      "type": "language",
+      "comment": ""
+    },
+    {
+      "name": "jQuery",
+      "time": "6 months ~ 1 year",
+      "type": "framework",
+      "comment": ""
+    },
+    {
+      "name": "React",
+      "time": "6 months ~ 1 year",
+      "type": "framework",
+      "comment": ""
+    },
+    {
+      "name": "jQuery",
+      "time": "6 months ~ 1 year",
+      "type": "framework",
+      "comment": ""
+    },
+    {
+      "name": "Docker",
+      "time": "6 months ~ 1 year",
+      "type": "framework",
+      "comment": ""
+    },
+    {
+      "name": "AWS EC2",
+      "time": "6 months ~ 1 year",
+      "type": "platform"
+    }
+  ]
+}

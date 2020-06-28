@@ -1,5 +1,5 @@
 let run = async () => {
-  const data = await fetch("content.json").then((data) => data.json());
+  const data = await fetch("../content.json").then((data) => data.json());
   console.log(data);
 
   document.getElementById("name").innerHTML = data.name;

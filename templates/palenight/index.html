@@ -11,7 +11,7 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
 			rel="stylesheet">
-
+		<link rel="stylesheet" href="./css/responsive.css">
 		<meta content="#1C1A3B" name="theme-color" />
 		<!-- Android search bar color -->
 		<meta content="{{$portfolio->name}} - Portfólio" property="og:title" />
@@ -45,28 +45,28 @@
 		<div class="container">
 
 			<div class="first-ctn">
-				<div class="logo">
+				<a class="logo" href="{{route('landing')}}">
 					<img src="./assets/logo.svg" alt="coracao he4rt">
 					<h1>Busque Dev</h1>
-				</div>
+				</a>
 				<div id="left-menu">
 
 
-					<img src="./assets/guts.jpg" alt="guts">
+					<img id="avatar" src="./assets/guts.jpg" alt="profile image">
 
 					<div id="labels">
-						<h2>Matheus</h2>
-						<p>Dev Fullesterco</p>
+						<h2 id="name">Matheus</h2>
+						<p id="title">Dev Fullesterco</p>
 					</div>
 
 					<div class="social-icons">
 						<div id="grid-icons">
-							<a href=""> <i class="fa fa-twitter"></i> </a>
+							<!-- <a href=""> <i class="fa fa-twitter"></i> </a>
 							<a href=""><i class="fa fa-linkedin"></i></a>
 							<a href=""><i class="fa fa-instagram"></i></a>
 							<a href=""> <i class="fa fa-facebook"></i></a>
 							<a href=""> <i class="fa fa-github"></i></a>
-							<a href=""> <i class="fa fa-reddit"></i></a>
+							<a href=""> <i class="fa fa-reddit"></i></a> -->
 						</div>
 					</div>
 				</div>
@@ -76,7 +76,8 @@
 						<div class="up-label">
 							<h2>Sobre</h2>
 						</div>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus
+						<p id="about">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+							Voluptatibus
 							id praesentium at quos hic accusantium animi, eos officiis repudiandae.
 							Quod excepturi beatae, accusantium fugit natus provident ad cumque
 							cupiditate. Mollitia dolorem, ducimus vero culpa deserunt, quo impedit
@@ -90,71 +91,7 @@
 						</div>
 
 						<div class="skills-subCtn">
-							<div class="grid-skills">
-								<div class="skill">
-									<div class="up-ctn">
-										<h3>Javascript</h3>
-									</div>
-									<div class="down-ctn">
-										<h3>2 anos ou mais</h3>
-									</div>
-								</div>
-								<div class="skill">
-									<div class="up-ctn">
-										<h3>Javascript</h3>
-									</div>
-									<div class="down-ctn">
-										<h3>2 anos ou mais</h3>
-									</div>
-								</div>
-								<div class="skill">
-									<div class="up-ctn">
-										<h3>Javascript</h3>
-									</div>
-									<div class="down-ctn">
-										<h3>2 anos ou mais</h3>
-									</div>
-								</div>
-								<div class="skill">
-									<div class="up-ctn">
-										<h3>Javascript</h3>
-									</div>
-									<div class="down-ctn">
-										<h3>2 anos ou mais</h3>
-									</div>
-								</div>
-								<div class="skill">
-									<div class="up-ctn">
-										<h3>Javascript</h3>
-									</div>
-									<div class="down-ctn">
-										<h3>2 anos ou mais</h3>
-									</div>
-								</div>
-								<div class="skill">
-									<div class="up-ctn">
-										<h3>Javascript</h3>
-									</div>
-									<div class="down-ctn">
-										<h3>2 anos ou mais</h3>
-									</div>
-								</div>
-								<div class="skill">
-									<div class="up-ctn">
-										<h3>Javascript</h3>
-									</div>
-									<div class="down-ctn">
-										<h3>2 anos ou mais</h3>
-									</div>
-								</div>
-								<div class="skill">
-									<div class="up-ctn">
-										<h3>Javascript</h3>
-									</div>
-									<div class="down-ctn">
-										<h3>2 anos ou mais</h3>
-									</div>
-								</div>
+							<div id="grid-skills">
 
 							</div>
 						</div>
@@ -163,57 +100,59 @@
 				</div>
 			</div>
 
-			<div class="second-ctn">
+			<div id="second-ctn">
 				<h2>Experiência</h2>
-				<div class="company">
-					<div class="up-label">
-						<h2>Empresa X</h2>
-					</div>
-					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus
-						id praesentium at quos hic accusantium animi, eos officiis repudiandae.
-						Quod excepturi beatae, accusantium fugit natus provident ad cumque
-						cupiditate. Mollitia dolorem, ducimus vero culpa deserunt, quo impedit
-						velit quae ea itaque a dolore odit numquam maxime reiciendis nesciunt
-						commodi cumque?</p>
-					<div class="down-label">
-						<h2>2 anos e 6 meses</h2>
-					</div>
-				</div>
-
-				<div id="gap"></div>
-
-				<div class="company">
-					<div class="up-label">
-						<h2>Empresa X</h2>
-					</div>
-					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus
-						id praesentium at quos hic accusantium animi, eos officiis repudiandae.
-						Quod excepturi beatae, accusantium fugit natus provident ad cumque
-						cupiditate. Mollitia dolorem, ducimus vero culpa deserunt, quo impedit
-						velit quae ea itaque a dolore odit numquam maxime reiciendis nesciunt
-						commodi cumque?</p>
-					<div class="down-label">
-						<h2>2 anos e 6 meses</h2>
-					</div>
-				</div>
-
-				<div id="gap"></div>
-
-				<div class="company">
-					<div class="up-label">
-						<h2>Empresa X</h2>
-					</div>
-					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus
-						id praesentium at quos hic accusantium animi, eos officiis repudiandae.
-						Quod excepturi beatae, accusantium fugit natus provident ad cumque
-						cupiditate. Mollitia dolorem, ducimus vero culpa deserunt, quo impedit
-						velit quae ea itaque a dolore odit numquam maxime reiciendis nesciunt
-						commodi cumque?</p>
-					<div class="down-label">
-						<h2>2 anos e 6 meses</h2>
-					</div>
-				</div>
 			</div>
+
+			<form class="third-ctn" method="POST"
+				action="/portfolio/{{$portfolio->id}}/messages">
+				<h2>Contato</h2>
+
+				<div class="row-inputs">
+					<div class="left-input">
+						<div class="up-label">
+							<h2>Nome</h2>
+						</div>
+						<input type="text" id="inputName"
+							name="name" placeholder="Seu nome">
+					</div>
+					<div class="right-input">
+						<div class="up-label">
+							<h2>E-mail</h2>
+						</div>
+						<input type="email" id="inputEmail"
+							name="from" placeholder="email@email.com">
+					</div>
+				</div>
+
+				<div class="column-inputs">
+					<div class="first-input">
+						<div class="up-label">
+							<h2>Assunto</h2>
+						</div>
+						<input type="text" id="inputSubject"
+							name="subject"
+							placeholder="Portfólio maneiro mnw | dont panic">
+					</div>
+
+					<div class="second-input">
+						<div class="up-label">
+							<h2>Mensagem</h2>
+						</div>
+						<textarea
+							id="inputMessage"
+							name="content"
+							rows="3"
+							placeholder="Digite sua mensagem aqui">
+						</textarea>
+					</div>
+
+					<button id="submitForm"
+						type="submit">ENVIAR</button>
+				</div>
+
+				<a href="https://github.com/xmatheus" target="_blank">Template by Matheus</a>
+			</form>
 		</div>
 		<script src="./js/main.js"></script>
 	</body>

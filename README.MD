@@ -1,6 +1,4 @@
-<h1 align="center">
-  Templates BusqueDev
-</h1>
+![Banner BusqueDev](https://github.com/littlebru/templates-busquedev/blob/master/images/capa-BusqueDev.png)
 
 <h3 align="center">
     Repositório com o passo a passo para criar templates para o <strong>Busque.dev</strong>!

@@ -1,4 +1,4 @@
-![Banner BusqueDev](https://github.com/littlebru/templates-busquedev/blob/master/images/capa-BusqueDev.png)
+[![Banner BusqueDev](https://github.com/littlebru/templates-busquedev/blob/master/images/capa-BusqueDev.png)](https://heartdevs.com/)
 
 <h3 align="center">
     Repositório com o passo a passo para criar templates para o <strong>Busque.dev</strong>!
